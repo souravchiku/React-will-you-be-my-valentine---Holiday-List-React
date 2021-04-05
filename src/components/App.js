@@ -17,12 +17,12 @@ const App = () => {
     const city= citylist.map((item,key)=>{
       if(item.country ==='India')
       return<li key={`location${key+1}`}>{item.name}</li>
-      console.log(item)
+     
     })
-    return <o>{city}</o>
+    return <ol>{city}</ol>
   }
   return (
-    <div>
+    <div id="main">
       {List() }
     </div>
   );
